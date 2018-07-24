@@ -1,0 +1,109 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "backstone-front"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "assets/style/font-face.css",
+        "assets/fonts/font-awesome-4.7/css/font-awesome.min.css",
+        "assets/fonts/font-awesome-5/css/fontawesome-all.min.css",
+        "assets/fonts/mdi-font/css/material-design-iconic-font.min.css",
+        "assets/style/bootstrap.min.css",
+        "assets/style/animsition.min.css",
+        "assets/style/bootstrap-progressbar-3.3.4.min.css",
+        "assets/style/animate.css",
+        "assets/style/hamburgers.min.css",
+        "assets/style/slick.css",
+        "assets/style/select2.min.css",
+        "assets/style/perfect-scrollbar.css",
+        "assets/style/theme.css",
+        "assets/style/ui/style.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "assets/scripts/jquery-3.2.1.min.js",
+        "assets/scripts/popper.min.js",
+        "assets/scripts/bootstrap.min.js",
+        "assets/scripts/slick.min.js",
+        "assets/scripts/wow.min.js",
+        "assets/scripts/animsition.min.js",
+        "assets/scripts/bootstrap-progressbar.min.js",
+        "assets/scripts/jquery.waypoints.min.js",
+        "assets/scripts/jquery.counterup.min.js",
+        "assets/scripts/circle-progress.min.js",
+        "assets/scripts/perfect-scrollbar.js",
+        "assets/scripts/Chart.bundle.min.js",
+        "assets/scripts/select2.min.js",
+        "assets/scripts/main.js",
+        "assets/scripts/ui/jquery.min.js",
+        "assets/scripts/ui/bootstrap.min.js",
+        "assets/scripts/ui/smoothscroll.js",
+        "assets/scripts/ui/jquery.validate.min.js",
+        "assets/scripts/ui/wow.min.js",
+        "assets/scripts/ui/jquery.stellar.min.js",
+        "assets/scripts/ui/jquery.magnific-popup.js",
+        "assets/scripts/ui/owl.carousel.min.js",
+        "assets/scripts/ui/rev-slider/jquery.themepunch.tools.min.js",
+        "assets/scripts/ui/rev-slider/jquery.themepunch.revolution.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.actions.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.carousel.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.kenburn.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.layeranimation.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.migration.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.navigation.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.parallax.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.slideanims.min.js",
+        "assets/scripts/ui/rev-slider/revolution.extension.video.min.js",
+        "assets/scripts/ui/interface.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
